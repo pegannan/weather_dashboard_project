@@ -150,7 +150,7 @@ async function updateWeatherInfo(city) {
 
     currentDateTxt.textContent = getCurrentDate()
     console.log(getCurrentDate())
-    weatherSummaryImg.src = `assets/${getWeatherIcon(id)}`
+    weatherSummaryImg.src = `/weather/${getWeatherIcon(id)}`
 
     getWeatherBackground(main);
 
