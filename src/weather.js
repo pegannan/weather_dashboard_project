@@ -66,47 +66,47 @@ function getWeatherBackground(main) {
 
     switch (main) {
         case "Thunderstorm":
-            document.body.style.background = "url(background/thunderstorm.gif)", 
+            document.body.style.background = "url(assets/thunderstorm.gif)", 
             document.body.style.backgroundSize = "cover",
             document.body.style.backgroundPosition = "Center"
     break;
         case "Drizzle":
-            document.body.style.background = "url(background/drizzle.gif)", 
+            document.body.style.background = "url(assets/drizzle.png)", 
             document.body.style.backgroundSize = "cover",
             document.body.style.backgroundPosition = "Center"
     break;
         case "Rain":
-            document.body.style.background = "url(background/rain.gif)", 
+            document.body.style.background = "url(assets/rain.gif)", 
             document.body.style.backgroundSize = "cover",
             document.body.style.backgroundPosition = "Center"
     break;
         case "Snow":
-            document.body.style.background = "url(background/snow.jpg)", 
+            document.body.style.background = "url(assets/snow.jpg)", 
             document.body.style.backgroundSize = "cover",
             document.body.style.backgroundPosition = "Center"
     break;
         case "Atmosphere":
-            document.body.style.background = "url(background/fog.gif)", 
+            document.body.style.background = "url(assets/atmosphere.png)", 
             document.body.style.backgroundSize = "cover",
             document.body.style.backgroundPosition = "Center"
     break;
     case "Mist":
-        document.body.style.background = "url(background/atmosphere.jpg)", 
+        document.body.style.background = "url(assets/atmosphere.jpg)", 
         document.body.style.backgroundSize = "cover",
         document.body.style.backgroundPosition = "Center"
     break;
         case "Clear":
-            document.body.style.background = "url(background/clear.jpg)", 
+            document.body.style.background = "url(assets/clear.jpg)", 
             document.body.style.backgroundSize = "cover",
             document.body.style.backgroundPosition = "Center"
     break;
         case "Clouds":
-            document.body.style.background = "url(background/clouds.jpg)", 
+            document.body.style.background = "url(assets/clouds.jpg)", 
             document.body.style.backgroundSize = "cover",
             document.body.style.backgroundPosition = "Center"
     break;
         default:
-            document.body.style.background = "url(background/clear.jpg)", 
+            document.body.style.background = "url(assets/clear.jpg)", 
             document.body.style.backgroundSize = "cover",
             document.body.style.backgroundPosition = "center"  
         
@@ -150,7 +150,7 @@ async function updateWeatherInfo(city) {
 
     currentDateTxt.textContent = getCurrentDate()
     console.log(getCurrentDate())
-    weatherSummaryImg.src = `weather/${getWeatherIcon(id)}`
+    weatherSummaryImg.src = `assets/weather/${getWeatherIcon(id)}`
 
     getWeatherBackground(main);
 
